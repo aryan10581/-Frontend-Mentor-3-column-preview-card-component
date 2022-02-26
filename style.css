@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+* {
+  padding: 0%;
+  margin: 0;
+  color: white;
+}
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+.Container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 60%;
+  height: 60%;
+  
+}
+.sedan {
+ border-radius: 10px 0px 0px 10px;
+  background-color: hsl(31, 77%, 52%);
+}
+.suv {
+ 
+  background-color: hsl(184, 100%, 22%);
+}
+.lux {
+    border-radius: 0px 10px 10px 0px;
+  background-color: hsl(179, 100%, 13%);
+}
+.sedan h1,
+.suv h1,
+.lux h1 {
+  font-family: "Big Shoulders Display", cursive;
+  padding: 5% 5%;
+  color: hsl(0, 0%, 95%);
+  margin: 5% 10%;
+}
+.sedan img,
+.suv img,
+.lux img {
+  margin-top: 15%;
+  margin-left: 15%;
+}
+.sedan p,
+.suv p,
+.lux p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  padding: 5% 5%;
+  margin: 5% 10%;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.sedan a,
+.suv a,
+.lux a {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  /* padding: 4% 8%;
+margin: 0% 10%; */
+
+  text-decoration: none;
+  border: 2px solid hsla(0, 0%, 100%, 0.75);
+  border-radius: 40px;
+  position: absolute;
+  padding: 1.25% 2.5%;
+  top: 82%;
+}
+.sedan a {
+  left: 5%;
+  color: hsl(31, 77%, 52%);
+  background-color: hsl(0, 0%, 95%);
+}
+.suv a {
+  color: hsl(184, 100%, 22%);
+  left: 38%;
+  background-color: hsl(0, 0%, 95%);
+}
+.lux a {
+  color: hsl(179, 100%, 13%);
+  left: 72%;
+  background-color: hsl(0, 0%, 95%);
+}
+.sedan a:hover,
+.suv a:hover,
+.lux a:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+@media screen and (max-width:1000px) {
+    .Container{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .Container{
+        flex-direction: column;
+    }
+    .sedan h1,
+.suv h1,
+.lux h1{
+    font-size: 60px;
+}
+.sedan img,
+.suv img,
+.lux img {
+  width: 20%;
+}
+.sedan p,
+.suv p,
+.lux p{
+    font-size: 20px;
+}
+.sedan, .lux, .suv{
+    height: 100vh;
+}
+.sedan a{
+  position: relative;
+  top: -30px;
+  left: 15%;
+}
+.suv a{
+   position: relative;
+   top: -30px;
+  left: 15%;
+
+}
+.lux a{
+   position: relative;
+   top: -30px;
+  left: 15%;
+
+}
+}
+@media screen and (max-width:466px) {
+    .Container{
+        flex-direction: column;
+    }
+    .sedan h1,
+.suv h1,
+.lux h1{
+    font-size: 60px;
+}
+.sedan img,
+.suv img,
+.lux img {
+  width: 20%;
+}
+.sedan p,
+.suv p,
+.lux p{
+    font-size: 20px;
+}
+.sedan, .lux, .suv{
+    height: 100vh;
+}
+.sedan a{
+  position: relative;
+  top: -3%;
+  left: 15%;
+}
+.suv a{
+   position: relative;
+   top: -3%;
+  left: 15%;
+
+}
+.lux a{
+   position: relative;
+   top: -3%;
+  left: 15%;
+
+}
+}
